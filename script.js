@@ -52,6 +52,7 @@ const age2 = calcAge2(1991);
 console.log(age1, age2);
 */
 
+/*
 // Arrow function
 const calcAge3 = (birthYear) => 2037 - birthYear;
 const age3 = calcAge3(1991);
@@ -66,3 +67,49 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1980, "Bob"));
+*/
+
+/*
+///////// VAŽNO!!!!!!!!!! ///////////////////////////////////////////////////////
+
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+  const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+}
+console.log(fruitProcessor(2, 3));
+
+*/
+
+/*
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  } else {
+    console.log(`${firstName} has already retired`);
+    return -1;
+  }
+};
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1970, "Mike"));
+*/
+
+/////////////////////////// CODING CHALLENGE #1 ////////////////////
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(3, 4, 5));
+
+const calcAverageKoalas = (B) => score1 + score2 + score3 / 3;
