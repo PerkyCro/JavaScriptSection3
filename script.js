@@ -203,6 +203,9 @@ if (friends.includes("Steven")) {
 }
 */
 
+//////// CODING CHALANGE #2 //////////////
+
+/*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -211,3 +214,173 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
+*/
+
+/*
+const jonasArray = ["Jonas", "Schmedtmann", 2037 - 1991, "teacher"];
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Shmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(jonas);
+*/
+
+/*
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Shmedtmann",
+  age: 2037 - 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+// console.log(jonas."last" + nameKey)  SA TOČKOM MORAMO KORISTITI PRAVO "PROPERTY" IME A NE COMPUTED IME
+
+const interestedIn = prompt(
+  "What do you whant to know about Jonas? Choose between firsName, lastName, age, job, and friends"
+);
+
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, LastName, age, job, and friends"
+  );
+}
+
+jonas.location = "Portugal";
+jonas["twitter"] = "@jonasschmedtman";
+console.log(jonas);
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Michael"
+
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+);
+*/
+
+/*
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Shmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  //  calcAge: function (birthYear) {
+  //    return 2037 - birthYear;
+  //  }
+  //calcAge: function () {
+  // console.log(this);
+  //  return 2037 - this.birthYear;
+  //},
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} -years old ${
+      jonas.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} drivers license.`;
+  },
+};
+
+console.log(jonas.calcAge());
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+// Challenge
+// "Jonas is a 46-year old teacher and he has a drivers license"
+console.log(jonas.getSummary());
+*/
+
+/*
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+console.log(mark.bmi, john.bmi);
+
+if (mark.bmi > john.bmi) {
+  mark.calcBMI();
+  console.log(
+    `${mark.fullName}s BMI (${mark.bmi}) is higher than ${john.fullName}s BMI (${john.bmi})`
+  );
+} else if (john.bmi > mark.bmi) {
+  console.log(
+    `${john.fullName}s BMI (${john.bmi}) is higher than ${mark.fullName}s BMI (${mark.bmi})`
+  );
+}
+*/
+
+//console.log("Lifting weights repetition 1");
+//console.log("Lifting weights repetition 2");
+//console.log("Lifting weights repetition 3");
+//console.log("Lifting weights repetition 4");
+//console.log("Lifting weights repetition 5");
+//console.log("Lifting weights repetition 6");
+//console.log("Lifting weights repetition 7");
+//console.log("Lifting weights repetition 8");
+//console.log("Lifting weights repetition 9");
+//console.log("Lifting weights repetition 10");
+
+// for loop keeps running while condition is TRUE
+/*
+for (let rep = 1; rep <= 30; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
+*/
+
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher"[("Michael", "Peter", "Steven")],
+];
+
+//console.log(jonas[0]);
+//console.log(jonas[1]);
+// ...
+//console.log(jonas[4]);
+
+for (let i = 0; ; i++) {
+  console.log(jonas[0]);
+}
